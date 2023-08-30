@@ -1,0 +1,476 @@
+{
+  "tutorials": [
+    {
+      "surfaces": {
+        "in_app_panel": {
+          "name": "使用剪贴蒙版制作毛刺艺术效果",
+          "version": "2.0.1",
+          "image": "https://cc-cdn.adobe.com/graceland/PHSP/en_US/2.0.0/create-a-glitch-art-effect-with-a-clipping-mask/glitch_art_effect_with_clipping_mask-HERO.jpg?1630621071816",
+          "content": [
+            {
+              "description": "要准备制作毛刺效果的文件，您需要复制“主体”图层并调整其在“图层”面板中的位置。",
+              "key": "photoshop/how-to/in-app/create-a-glitch-art-effect-with-a-clipping-mask-step-2",
+              "title": "复制并调整“主体”图层的位置",
+              "taskList": {
+                "tasks": [
+                  {
+                    "key": "photoshop/how-to/in-app/create-a-glitch-art-effect-with-a-clipping-mask-step-2-task-1",
+                    "coachmark": {
+                      "content": "单击“图案”图层缩览图左侧的空白小方块，以显示此图层。",
+                      "position": {
+                        "type": "view",
+                        "arrow": "top-left",
+                        "arrowOrientation": "horizontal",
+                        "panel": "layers",
+                        "viewID": "layr"
+                      },
+                      "type": "text",
+                      "key": "coachmark-1"
+                    },
+                    "successConditions": [],
+                    "type": "Step"
+                  },
+                  {
+                    "key": "photoshop/how-to/in-app/create-a-glitch-art-effect-with-a-clipping-mask-step-2-task-2",
+                    "coachmark": {
+                      "content": "“图案”图层中的白色条纹周围都是透明区域。这是生成毛刺效果的前提。单击“{NEXT}”以继续。",
+                      "position": {
+                        "type": "canvas",
+                        "arrow": "top-left",
+                        "arrowOrientation": "horizontal",
+                        "offset": {
+                          "left": "62%",
+                          "top": "63%"
+                        }
+                      },
+                      "type": "text",
+                      "key": "coachmark-2"
+                    },
+                    "successConditions": [],
+                    "type": "Step"
+                  },
+                  {
+                    "key": "photoshop/how-to/in-app/create-a-glitch-art-effect-with-a-clipping-mask-step-2-task-3",
+                    "coachmark": {
+                      "content": "选择“主体”图层。",
+                      "position": {
+                        "type": "appmenu",
+                        "name": "layer"
+                      },
+                      "type": "text",
+                      "key": "coachmark-3"
+                    },
+                    "successConditions": [
+                      {
+                        "event": "invokeCommand",
+                        "descriptor": {
+                          "commandID": 1135,
+                          "_isCommand": false,
+                          "kcanDispatchWhileModal": true
+                        }
+                      }
+                    ],
+                    "type": "Step"
+                  },
+                  {
+                    "key": "photoshop/how-to/in-app/create-a-glitch-art-effect-with-a-clipping-mask-step-2-task-4",
+                    "coachmark": {
+                      "content": "选择“{2970}”",
+                      "position": {
+                        "type": "dialog"
+                      },
+                      "type": "text",
+                      "key": "coachmark-4"
+                    },
+                    "successConditions": [],
+                    "type": "Step"
+                  },
+                  {
+                    "key": "photoshop/how-to/in-app/create-a-glitch-art-effect-with-a-clipping-mask-step-2-task-5",
+                    "coachmark": {
+                      "content": "向上拖动“主体”拷贝图层以调整其位置，使其位于“图案”图层的上方。",
+                      "position": {
+                        "type": "view",
+                        "arrow": "top-left",
+                        "arrowOrientation": "horizontal",
+                        "panel": "layers",
+                        "viewID": "layr"
+                      },
+                      "type": "text",
+                      "key": "coachmark-5"
+                    },
+                    "successConditions": [
+                      {
+                        "event": "move",
+                        "descriptor": {
+                          "null": {
+                            "_enum": "ordinal",
+                            "_ref": "layer",
+                            "_value": "targetEnum"
+                          },
+                          "to": {
+                            "_index": 3,
+                            "_ref": "layer"
+                          }
+                        }
+                      }
+                    ],
+                    "type": "Step"
+                  }
+                ]
+              }
+            },
+            {
+              "description": "剪贴蒙版将使用下方图层的像素和透明区域来确定上方图层的可见内容。",
+              "key": "photoshop/how-to/in-app/create-a-glitch-art-effect-with-a-clipping-mask-step-3",
+              "title": "添加剪贴蒙版以创建毛刺效果",
+              "taskList": {
+                "tasks": [
+                  {
+                    "key": "photoshop/how-to/in-app/create-a-glitch-art-effect-with-a-clipping-mask-step-3-task-1",
+                    "coachmark": {
+                      "content": "按住 Opt 键 (Mac) 或 Alt 键 (Win) 并单击“主体”拷贝图层和“图案”图层之间的边框，以创建剪贴蒙版。单击“{NEXT}”以继续。",
+                      "position": {
+                        "type": "view",
+                        "arrow": "top-left",
+                        "arrowOrientation": "horizontal",
+                        "panel": "layers",
+                        "viewID": "layr"
+                      },
+                      "type": "text",
+                      "key": "coachmark-1"
+                    },
+                    "successConditions": [],
+                    "type": "Step"
+                  },
+                  {
+                    "key": "photoshop/how-to/in-app/create-a-glitch-art-effect-with-a-clipping-mask-step-3-task-2",
+                    "coachmark": {
+                      "content": "“主体”拷贝图层上的向下箭头表示此图层已剪切到下面的“图案”图层，生成剪贴蒙版。单击“{NEXT}”以继续。",
+                      "position": {
+                        "type": "view",
+                        "arrow": "top-left",
+                        "arrowOrientation": "horizontal",
+                        "panel": "layers",
+                        "viewID": "layr"
+                      },
+                      "type": "text",
+                      "key": "coachmark-2"
+                    },
+                    "successConditions": [],
+                    "type": "Step"
+                  },
+                  {
+                    "key": "photoshop/how-to/in-app/create-a-glitch-art-effect-with-a-clipping-mask-step-3-task-3",
+                    "coachmark": {
+                      "content": "选择“{moveTool}”。如果此工具已处于选中状态，请选择其他工具，然后重新单击此工具。",
+                      "position": {
+                        "type": "tool",
+                        "id": "moveTool"
+                      },
+                      "type": "text",
+                      "key": "coachmark-3"
+                    },
+                    "successConditions": [
+                      {
+                        "event": "select",
+                        "descriptor": {
+                          "null": {
+                            "_ref": "moveTool"
+                          }
+                        }
+                      }
+                    ],
+                    "type": "Step"
+                  },
+                  {
+                    "key": "photoshop/how-to/in-app/create-a-glitch-art-effect-with-a-clipping-mask-step-3-task-4",
+                    "coachmark": {
+                      "content": "向左拖动“主体”拷贝图层以查看毛刺效果。剪贴蒙版由“图案”图层上的透明区域所形成，这些透明区域会隐藏上一图层的相应区域。单击“{NEXT}”以继续。",
+                      "position": {
+                        "type": "canvas",
+                        "arrow": "top-left",
+                        "arrowOrientation": "horizontal",
+                        "offset": {
+                          "left": "68%",
+                          "top": "28%"
+                        }
+                      },
+                      "type": "text",
+                      "key": "coachmark-4"
+                    },
+                    "successConditions": [],
+                    "type": "Step"
+                  },
+                  {
+                    "key": "photoshop/how-to/in-app/create-a-glitch-art-effect-with-a-clipping-mask-step-3-task-5",
+                    "coachmark": {
+                      "content": "选择“图案”图层，使其处于现用状态。",
+                      "position": {
+                        "type": "layer",
+                        "name": "Pattern"
+                      },
+                      "type": "text",
+                      "key": "coachmark-5"
+                    },
+                    "successConditions": [
+                      {
+                        "event": "select",
+                        "descriptor": {
+                          "null": {
+                            "_name": "Pattern",
+                            "_ref": "layer"
+                          }
+                        }
+                      }
+                    ],
+                    "type": "Step"
+                  },
+                  {
+                    "key": "photoshop/how-to/in-app/create-a-glitch-art-effect-with-a-clipping-mask-step-3-task-6",
+                    "coachmark": {
+                      "content": "拖动即可移动“图案”图层。这是另一种修改毛刺效果的方法。尝试变换各个图层的位置，找到您喜欢的图层组合。单击“{NEXT}”以继续。",
+                      "position": {
+                        "type": "canvas",
+                        "arrow": "top-left",
+                        "arrowOrientation": "horizontal",
+                        "offset": {
+                          "left": "68%",
+                          "top": "59%"
+                        }
+                      },
+                      "type": "text",
+                      "key": "coachmark-6"
+                    },
+                    "successConditions": [],
+                    "type": "Step"
+                  }
+                ]
+              }
+            },
+            {
+              "key": "photoshop/how-to/in-app/create-a-glitch-art-effect-with-a-clipping-mask-step-4",
+              "title": "大功告成！向“主体”拷贝图层添加剪贴蒙版之后，该图层的可见区域取决于下方的“图案”图层，从而产生毛刺效果。",
+              "fallbackTitle": "大功告成！向“主体”拷贝图层添加剪贴蒙版之后，该图层的可见区域取决于下方的“图案”图层，从而产生毛刺效果。",
+              "credit": "Adobe Stock：Parad St"
+            }
+          ],
+          "client": "Learn",
+          "key": "photoshop/how-to/in-app/create-a-glitch-art-effect-with-a-clipping-mask",
+          "landingStep": {
+            "description": "使用带有图形图案图层的剪贴蒙版创建视觉毛刺效果。",
+            "image": "https://cc-cdn.adobe.com/graceland/PHSP/en_US/2.0.0/create-a-glitch-art-effect-with-a-clipping-mask/glitch_art_effect_with_clipping_mask-HERO.jpg?1630621071816",
+            "key": "step-1",
+            "title": "使用剪贴蒙版制作毛刺艺术效果",
+            "coachmark": {
+              "content": "单击“{NEXT}”以开始",
+              "position": {
+                "type": "view",
+                "arrow": "top-right",
+                "arrowOrientation": "vertical",
+                "panel": "panelid.static.learn",
+                "viewID": "next"
+              },
+              "type": "text",
+              "key": "coachmarkKey"
+            }
+          },
+          "author": {
+            "name": "Holly Johnson",
+            "avatar": "https://utut-service.adobe.com/api/user/avatar/272C31DD53364AFC0A490D44.jpg",
+            "bio": "https://utut-service.adobe.com/api/user/avatar/bio/272C31DD53364AFC0A490D44.json",
+            "badge": "https://utut-service.adobe.com/api/user/avatar/badge/272C31DD53364AFC0A490D44.svg"
+          },
+          "type": "Tutorial",
+          "locale": "zh_CN",
+          "template": "https://cc-cdn.adobe.com/graceland/PHSP/en_US/2.0.1/create-a-glitch-art-effect-with-a-clipping-mask/v3b_glitch_effect.psdt"
+        },
+        "in_app_panels": {
+          "live": "3968f1db-25e4-34d1-a57a-6bec9d98c04b",
+          "versions": [
+            2
+          ]
+        },
+        "ids": {
+          "in_app_panels": {
+            "live": "3968f1db-25e4-34d1-a57a-6bec9d98c04b",
+            "versions": [
+              2
+            ]
+          }
+        }
+      },
+      "aem_id": "photoshop/how-to/in-app/create-a-glitch-art-effect-with-a-clipping-mask",
+      "metadata": {
+        "formatVersion": "1.0",
+        "descriptions": {
+          "medium": "使用带有图形图案图层的剪贴蒙版创建视觉毛刺效果。",
+          "short": "使用带有图形图案图层的剪贴蒙版创建视觉毛刺效果。",
+          "long": "使用带有图形图案图层的剪贴蒙版创建视觉毛刺效果。"
+        },
+        "media_types": [
+          "HandsOn"
+        ],
+        "creative_fields": [
+          "graphic-design"
+        ],
+        "application": {
+          "fi_code": "photoshop_cc",
+          "sap_code": "PHSP"
+        },
+        "locale": "zh_CN",
+        "images": {
+          "hero": "https://cc-cdn.adobe.com/graceland/PHSP/en_US/2.0.0/create-a-glitch-art-effect-with-a-clipping-mask/glitch_art_effect_with_clipping_mask-HERO.jpg?1630621071816",
+          "thumbnail": "https://cc-cdn.adobe.com/graceland/PHSP/en_US/2.0.0/create-a-glitch-art-effect-with-a-clipping-mask/glitch_art_effect_with_clipping_mask-THUMB_1.jpg",
+          "heroPath": "assets/LCM-PHXS-24.2.1-zh_CN-845898b2-996f-411c-a06f-ac9a591dc18e.jpeg",
+          "thumbnailPath": "assets/LCM-PHXS-24.2.1-zh_CN-786caccb-993e-4fcf-afe2-6e9faefe8a04.jpeg"
+        },
+        "title": "使用剪贴蒙版制作毛刺艺术效果",
+        "platforms": [
+          "in-app"
+        ],
+        "duration_in_seconds": "110",
+        "learning_approach": "interactive-in-app",
+        "related_applications": {
+          "fi_code": [],
+          "sap_code": []
+        },
+        "level": "intermediate",
+        "stage": "practice",
+        "source": {
+          "third_party": false,
+          "label": "Adobe.com"
+        },
+        "topics": [
+          "Layers",
+          "Creative effects",
+          "Transparency"
+        ],
+        "urls": {},
+        "taxonomy": {
+          "creative_fields": [
+            {
+              "archived": false,
+              "enName": "Graphic design",
+              "id": "c42a4f725de6414facbd08326ec4cc7f",
+              "internalId": "graphic-design",
+              "name": "图形设计",
+              "toolType": ""
+            }
+          ],
+          "tasks": [
+            {
+              "archived": false,
+              "enName": "Hide or show content",
+              "id": "e6187984f9574a1496ac247a552c80fb",
+              "internalId": "hide-or-show-content",
+              "name": "隐藏或显示内容",
+              "toolType": ""
+            },
+            {
+              "archived": false,
+              "enName": "Create layers",
+              "id": "da21eace082b41969591de417219a204",
+              "internalId": "create-layers",
+              "name": "创建图层",
+              "toolType": ""
+            },
+            {
+              "archived": false,
+              "enName": "Reorder layers",
+              "id": "8320a45c48c1428dbc9c8b9b549fde0e",
+              "internalId": "reorder-layers",
+              "name": "对图层重新排序",
+              "toolType": ""
+            },
+            {
+              "archived": false,
+              "enName": "Move layer",
+              "id": "f8a9abbe169d4c3893764a521b6261e5",
+              "internalId": "move-layer",
+              "name": "移动图层",
+              "toolType": ""
+            },
+            {
+              "archived": false,
+              "enName": "Select layer",
+              "id": "50c7f9d9d73943e3875a7f1ea7a6041e",
+              "internalId": "select-layer",
+              "name": "选择图层",
+              "toolType": ""
+            },
+            {
+              "archived": false,
+              "enName": "Create clipping mask",
+              "id": "c7e1efa1b5e349f696ab4300420eaf8e",
+              "internalId": "create-clipping-mask",
+              "name": "创建剪辑蒙版",
+              "toolType": ""
+            }
+          ],
+          "tools": [
+            {
+              "archived": false,
+              "enName": "Layers",
+              "id": "7bf6af64c9374df388b8bce29e45d8af",
+              "internalId": "layers",
+              "name": "图层",
+              "toolType": "panel"
+            },
+            {
+              "archived": false,
+              "enName": "Layer > Duplicate Layer",
+              "id": "54904aca9c7b47f3bec7ac7beef94c2a",
+              "internalId": "layer-duplicate-layer",
+              "name": "图层 > 复制图层",
+              "toolType": "menu"
+            },
+            {
+              "archived": false,
+              "enName": "Move Tool",
+              "id": "944cf8e449d44ebc822cce0eadd97bf5",
+              "internalId": "move-tool",
+              "name": "移动工具",
+              "toolType": "tool"
+            }
+          ],
+          "topics": [
+            {
+              "archived": false,
+              "enName": "Layers",
+              "id": "0605b453f31c407fb6cb3132755c41ac",
+              "internalId": "layers",
+              "name": "图层",
+              "toolType": ""
+            },
+            {
+              "archived": false,
+              "enName": "Creative effects",
+              "id": "96a0db0625324adfaaee16dde4533dac",
+              "internalId": "creative-effects",
+              "name": "创意效果",
+              "toolType": ""
+            },
+            {
+              "archived": false,
+              "enName": "Transparency",
+              "id": "a05caf043caa4f3f8ae0779848f83ea5",
+              "internalId": "transparency",
+              "name": "透明度",
+              "toolType": ""
+            }
+          ]
+        }
+      },
+      "urls": {
+        "helpx": null,
+        "helpx_iframe": null,
+        "low_url": null
+      },
+      "created_on": "2022-03-03T23:17:31.775Z",
+      "modified_on": "2022-09-27T21:13:40.610Z",
+      "locale": "zh_CN",
+      "published_status": "live",
+      "tutorialUUID": "3da526e8-1e98-3edc-b47e-89e7bf9eb226",
+      "service_uuid": "af5fbba5-18a0-35f5-bdb6-14a654f4fd15",
+   
